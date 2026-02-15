@@ -19,15 +19,9 @@ As a [skill](https://skills.sh) (Claude Code, Codex, Cursor, etc.):
 bunx skills add ethan-huo/apple-docs
 ```
 
-## Schema (for AI Agents)
+## Schema
 
-`--schema` outputs the full typed CLI spec — all commands, parameters, types, and defaults. This is the primary interface for AI agents to discover and use `apple-docs`:
-
-```bash
-apple-docs --schema
-```
-
-Agents should call this once to understand the complete API surface, then invoke commands directly.
+`apple-docs --schema` — view the full typed command spec at once.
 
 ## Usage
 

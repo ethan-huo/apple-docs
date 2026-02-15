@@ -9,13 +9,7 @@ CLI for querying Apple Developer Documentation. Searches docs, reads full API pa
 
 ## Getting Started
 
-Run `apple-docs --schema` to get the full typed CLI spec — all commands, parameters, types, and defaults in one shot:
-
-```bash
-apple-docs --schema
-```
-
-This is the fastest way to understand what's available. The schema output is designed for AI agents to parse and use directly.
+`apple-docs --schema` — view the full typed command spec at once.
 
 ## Commands
 
@@ -80,7 +74,6 @@ apple-docs samples --framework RealityKit --beta only
 
 ## Tips
 
-- **Start with `--schema`** if you're unsure about parameters — it gives you the complete typed spec.
 - `doc --related` includes "See Also" and relationship sections — useful for discovering related APIs.
 - `doc --platform` shows platform availability (iOS, macOS, visionOS, etc.) with version numbers.
 - `symbols --pattern` supports wildcards: `"*Controller"`, `"UI*"`, `"*View*"`.
