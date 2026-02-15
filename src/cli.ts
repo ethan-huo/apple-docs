@@ -1,3 +1,4 @@
+#!/usr/bin/env bun
 import { toStandardJsonSchema } from '@valibot/to-json-schema'
 import * as v from 'valibot'
 import { c, cli, group } from 'argc'

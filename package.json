@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Apple Developer Documentation CLI",
   "type": "module",
+  "bin": {
+    "apple-docs": "./src/cli.ts"
+  },
   "scripts": {
     "dev": "bun run src/cli.ts",
     "test": "bun test"
