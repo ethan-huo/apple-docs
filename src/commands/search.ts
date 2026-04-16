@@ -1,4 +1,5 @@
 import * as cheerio from 'cheerio'
+import type { AnyNode } from 'domhandler'
 import { fetchHtml } from '../lib/http'
 import { APPLE_URLS } from '../lib/urls'
 import { normalizeFramework } from '../lib/frameworks'
@@ -28,7 +29,7 @@ const TYPE_DISPLAY: Record<string, string> = {
 }
 
 export function extractResultType(
-  element: cheerio.Cheerio<cheerio.AnyNode>,
+  element: cheerio.Cheerio<AnyNode>,
 ): string {
   const classes = element.attr('class')?.split(/\s+/) ?? []
   for (const cls of classes) {
@@ -38,7 +39,7 @@ export function extractResultType(
 }
 
 export function parseResult(
-  element: cheerio.Cheerio<cheerio.AnyNode>,
+  element: cheerio.Cheerio<AnyNode>,
   filterType: string,
 ): SearchResult | null {
   const resultType = extractResultType(element)

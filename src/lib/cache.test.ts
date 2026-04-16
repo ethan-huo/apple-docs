@@ -22,7 +22,7 @@ describe('makeCacheKey', () => {
 describe('cacheGet / cacheSet', () => {
   test('returns stored value', () => {
     cacheSet('test-get', 'hello', 60_000)
-    expect(cacheGet('test-get')).toBe('hello')
+    expect(cacheGet<string>('test-get')).toBe('hello')
   })
 
   test('returns undefined for missing key', () => {
