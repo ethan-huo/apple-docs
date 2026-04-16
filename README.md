@@ -9,7 +9,12 @@ AI coding agents working with Apple frameworks need fast access to API docs, sym
 ## Install
 
 ```bash
-# requires: bun
+curl -fsSL https://raw.githubusercontent.com/ethan-huo/apple-docs/main/install.sh | bash
+```
+
+Or with Bun:
+
+```bash
 bun install -g github:ethan-huo/apple-docs
 ```
 
@@ -79,7 +84,7 @@ All output is Markdown.
 
 ## Built With
 
-- [argc](https://github.com/user/argc) — schema-first CLI framework for Bun
+- [argc](https://github.com/ethan-huo/argc) — schema-first CLI framework for Bun
 - [cheerio](https://cheerio.js.org/) — HTML parsing for search results
 - [Bun](https://bun.sh/) — runtime (no build step, runs TypeScript directly)
 

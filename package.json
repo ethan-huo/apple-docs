@@ -8,10 +8,13 @@
   },
   "scripts": {
     "dev": "bun run src/cli.ts",
-    "test": "bun test"
+    "typecheck": "bunx tsc --noEmit",
+    "test": "bun test",
+    "check": "bun run typecheck && bun test",
+    "build": "bun build src/cli.ts --outfile=dist/apple-docs --target=bun --minify && chmod +x dist/apple-docs"
   },
   "dependencies": {
-    "argc": "link:../argc",
+    "argc": "github:ethan-huo/argc",
     "cheerio": "^1.1.0"
   },
   "devDependencies": {
