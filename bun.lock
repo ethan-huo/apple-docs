@@ -5,7 +5,7 @@
     "": {
       "name": "apple-docs",
       "dependencies": {
-        "argc": "github:ethan-huo/argc",
+        "argc": "github:ethan-huo/argc#v0.0.2",
         "cheerio": "^1.1.0",
       },
       "devDependencies": {
@@ -42,7 +42,7 @@
 
     "@valibot/to-json-schema": ["@valibot/to-json-schema@1.5.0", "", { "peerDependencies": { "valibot": "^1.2.0" } }, "sha512-GE7DmSr1C2UCWPiV0upRH6mv0cCPsqYGs819fb6srCS1tWhyXrkGGe+zxUiwzn/L1BOfADH4sNjY/YHCuP8phQ=="],
 
-    "argc": ["argc@github:ethan-huo/argc#efc582a", { "peerDependencies": { "@standard-schema/spec": "^1.0.0" } }, "ethan-huo-argc-efc582a", "sha512-RZwZxYoAgIeohTGgM2xkg285030wDOtnar6r3aCKjhdw9WjBfgUhL+iGfVOF7GO/Iot9O1nzQGFGtdypIwIbhA=="],
+    "argc": ["argc@github:ethan-huo/argc#3b20e2d", { "peerDependencies": { "@standard-schema/spec": "^1.0.0" } }, "ethan-huo-argc-3b20e2d", "sha512-zEJbnztCTQUWY11R/lzijuwS75pWbNfb6PRwhK/QvujelOZEd1o/OM9EmwXXed7JJiWCtf1dv1nmDnNNH9pqKw=="],
 
     "boolbase": ["boolbase@1.0.0", "", {}, "sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww=="],
 
