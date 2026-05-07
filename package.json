@@ -2,10 +2,10 @@
   "name": "apple-docs",
   "version": "0.1.0",
   "description": "Apple Developer Documentation CLI",
-  "type": "module",
   "bin": {
     "apple-docs": "./src/cli.ts"
   },
+  "type": "module",
   "scripts": {
     "dev": "bun run src/cli.ts",
     "typecheck": "tsgo --noEmit",
@@ -14,7 +14,7 @@
     "build": "bun build src/cli.ts --outfile=dist/apple-docs --target=bun --minify && chmod +x dist/apple-docs"
   },
   "dependencies": {
-    "argc": "github:ethan-huo/argc#v1.0.0",
+    "argc": "github:ethan-huo/argc#v4.1.1",
     "cheerio": "^1.1.0"
   },
   "devDependencies": {
